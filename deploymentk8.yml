@@ -1,0 +1,22 @@
+---
+- hosts: master
+  become_user: ubuntu
+  tasks:
+  - name: showing the output
+    shell: |
+       kubectl get nodes
+       kubectl get nodes -o wide
+- hosts: master
+  become_user: ubuntu
+  tasks:
+  - name: cloning the repo
+    git:
+      repo: https://github.com/Dabbeeru/terraform-with-ansible.git
+      dest: /home/ubuntu/terraform-with-ansible
+  - name: executing the kubectl commands
+    shell: |
+     cd /home/ubuntu/terraform-with-ansible
+      kubectl apply -f Deployment.yml
+      kubectl apply -f Service.yml
+      cd ~
+      kubectl get svc
