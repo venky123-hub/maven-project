@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: venky/tomcat:3.0
+        image: reachtovenkat/tomcat:3.0
         ports:
         - containerPort: 8080
           protocol: TCP
