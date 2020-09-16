@@ -28,25 +28,7 @@ pipeline {
         
       
     
-    stage ('building docker image'){
 
- 
-steps
-
- 
-{
-
- 
-echo "building the docker image "
-
- 
-sh 'mvn clean package;sudo docker build -t venkatesh/ngnix:latest.'
-
- 
-}
-
- 
-}
 
  
   
