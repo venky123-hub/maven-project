@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 hi i am good 
 
 looking fot conflickes
+=======
+hi i am good 
+>>>>>>> 24ba1fbcf8e06d286b7737ca18ffa3a12456aacf
